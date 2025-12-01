@@ -74,3 +74,35 @@ const rest=()=>{
 
 export default App 
 ```
+
+
+
+# Destrucring in react javascript
+
+1.destrucring
+```jsx
+import React, { useState } from 'react'
+
+const App = () => {
+
+  const [val, valscond] = useState({user: 'Shivendra', age:16})
+
+const change=()=>{
+  const value = {...val}
+  value.user = 'Aditya'
+  console.log(value)
+  valscond(value)
+}
+
+
+
+  return (
+    <div>
+      <h1>{val.user}</h1>
+      <button onClick={change}>Click</button>
+    </div>
+  )
+}
+
+export default App
+```
