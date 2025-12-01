@@ -27,6 +27,7 @@ const App = () => {
 };
 
 export default App; 
+```
 
 
 
@@ -72,3 +73,4 @@ const rest=()=>{
 }
 
 export default App 
+```
