@@ -1,0 +1,45 @@
+button{
+margin: 30px;
+  padding: 20px;
+
+  color: rgb(26, 126, 26);
+  font-size: 16px;
+  
+}
+
+h1{
+  color: red;
+border: 2px solid blanchedalmond;
+  margin: 20px auto;
+  padding: 25px;
+  width: 20%;
+  height: 10vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(187, 219, 229);
+}
+
+
+div{
+  border: 2px solid whitesmoke;
+  text-align: center;
+box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+height: 80vh;
+width: 80vh;
+
+}
+
+body{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 15px;
+ padding-top: 50px;
+}
+
+
+h3{
+  color: blue;
+  font-size: 20px;
+}
