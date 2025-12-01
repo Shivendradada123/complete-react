@@ -6,7 +6,8 @@
 4. second wale se ham value ko change kar sakte hai == niche code me dhek ke  reivse kar le 
 
 
-``` import React, { useState } from "react";
+```jsx
+ import React, { useState } from "react";
 
 const App = () => {
   const [first, setfirst] = useState(16);
@@ -29,11 +30,17 @@ export default App;
 
 
 
+
+
+
+
+
 # Counter app help of state logic
 
 1. counter app
 
-``` import React, { useState } from 'react'
+```jsx
+ import React, { useState } from 'react'
 
 const App = () => {
 
@@ -51,8 +58,6 @@ const plus=()=>{
 const rest=()=>{
  num2(0)
 }
-
-
 
   return (
     <div>
