@@ -95,3 +95,23 @@
 
 
 
+
+// notes App
+
+
+import React from 'react'
+import Notes from './pretice/notes'
+
+const App = () => {
+  return (
+    <div>
+<Notes></Notes>
+
+
+    </div>
+  )
+}
+
+export default App
+
+
