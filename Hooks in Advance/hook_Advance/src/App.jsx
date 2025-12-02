@@ -37,32 +37,61 @@
 
 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const App = () => {
-
-
-const [num, setnum] = useState(16)
+// const App = () => {
 
 
-
-
-const fnc=()=>{
-setnum(prev =>(prev +1))
-setnum(prev =>(prev +1))
-setnum(prev =>(prev +1))
-}
+// const [num, setnum] = useState(16)
 
 
 
-  return (
-    <div>
 
-<h1>{num}</h1>
-<button onClick={fnc}>click</button>
+// const fnc=()=>{
+// setnum(prev =>(prev +1))
+// setnum(prev =>(prev +1))
+// setnum(prev =>(prev +1))
+// }
 
-    </div>
-  )
-}
 
-export default App
+
+//   return (
+//     <div>
+
+// <h1>{num}</h1>
+// <button onClick={fnc}>click</button>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import Form from './pretice/form'
+
+// const App = () => {
+//   return (
+//     <div>
+// <Form></Form>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
