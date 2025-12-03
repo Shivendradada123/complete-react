@@ -14,8 +14,9 @@ const copytask = [...task];
 
 copytask.push({title, details})
 settask(copytask)
-console.log(copytask)
 
+console.log(copytask)
+console.log(task)
 
 
   e.preventDefault()
@@ -25,6 +26,12 @@ setdetails('')
 }
 
 
+
+const delteNote=(idx)=>{
+ const copytask = [...task]
+copytask.splice(idx,1)
+settask(copytask)
+}
 
 
 
@@ -68,10 +75,21 @@ setdetails('')
       </form>
       <div className="  p-10 lg:w-1/2 ">
       <h1 className="text-3xl font-bold">Your Notes </h1>
-        <div className="flex gap-5 flex-wrap mt-5 h-full overflow-auto"> 
-          <div className="h-62 w-42 rounded-2xl bg-white"></div>
-        <div className="h-62 w-42 rounded-2xl bg-white"></div>
-        <div className="h-62 w-42 rounded-2xl bg-white"></div>
+        <div className="flex gap-5 flex-wrap mt-5 h-full  items-start justify-start overflow-auto" > 
+        {task.map(function(elem, idx){
+          return   <div  key={idx} className="h-62 w-42 flex justify-between flex-col item-start rounded-2xl text-xl  text-black py-12
+          
+          px-7 bg-cover bg-no-repeat bg-[url('https://www.nicepng.com/png/detail/67-679001_notes-document-notepad-office-reminder-sticky-note-paper.png')]">
+            <div><h2  className="font-bold">{elem.title}</h2>
+            <p className="mt-4 font-light">{elem.details}</p>
+            </div>
+            <button  onClick={()=>{
+              delteNote(idx)
+            }}  className="w-full bg-red-600 py-1 text-xs rounded text-white active:scale-95   "  >delet </button>
+          </div>
+        
+        })}
+        
         
         
         </div>
