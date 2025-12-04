@@ -1,3 +1,6 @@
+# UseEffect in react by Shivendra
+
+```jsx
 import React, { useEffect, useState } from "react";
 
 const App = () => {
@@ -46,3 +49,4 @@ const App = () => {
 };
 
 export default App;
+```
